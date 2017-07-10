@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'npm --versiaaa'
+                sh 'npm --version'
+                sh 'npm i'
+                sh 'npm test'
             }
         }
     }
